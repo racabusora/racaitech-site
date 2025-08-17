@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </radialGradient>
+  </defs>
+  <circle cx="110" cy="110" r="100" fill="url(#g)" />
+  <circle cx="110" cy="110" r="92" fill="none" stroke="#0b5" stroke-width="6" opacity="0.5"/>
+  <text x="110" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#042" font-weight="700">30-DAY</text>
+  <text x="110" y="110" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="42" fill="#042" font-weight="900">GUARANTEE</text>
+  <text x="110" y="142" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#053" font-weight="700">MONEY BACK</text>
+  <g transform="translate(110,170)">
+    <path d="M-50 0 L-40 -10 L-30 0 L60 0" stroke="#064" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
