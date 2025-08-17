@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>RACAITECH — AI-Powered Web Scraping & Data Tools (Basic Kit)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Scrape products, jobs, and news with an AI-ready Python API and a clean PHP dashboard. Export CSV/Excel/JSON. Ready-to-run Basic Kit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1020;--ink:#0c1222;--card:#0f1630;--muted:#a7b0c3;--brand:#6ee7b7;--cta:#10b981;}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:#eaf0ff;background:linear-gradient(180deg,#0b1020 0%, #0e1328 100%);}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px} .nav{display:flex;align-items:center;justify-content:space-between}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:4px 8px;border-radius:999px;background:#0a182f;border:1px solid #15315a;color:#b9d2ff;font-size:11px}
+    .badge{display:inline-flex;gap:8px;align-items:center;background:#0c1a36;border:1px solid #1a2d57;color:#cfe6ff;padding:6px 10px;border-radius:999px;font-size:12px}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;margin-top:28px}
+    .h1{font-size:40px;line-height:1.15;letter-spacing:-0.02em;margin:10px 0 18px} .sub{color:#c4d0ea;font-size:18px;line-height:1.55}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:var(--cta);color:#041018;text-decoration:none;border-radius:12px;padding:14px 18px;font-weight:800;box-shadow:0 10px 24px rgba(16,185,129,.25)}
+    .cta:hover{filter:brightness(1.05)} .btnGhost{display:inline-flex;align-items:center;gap:8px;border:1px solid #233b70;color:#cfe6ff;text-decoration:none;border-radius:10px;padding:12px 14px}
+    .sec{margin-top:56px} .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:18px} .card h3{margin:8px 0 8px;font-size:18px}
+    .li{display:flex;gap:10px;margin:8px 0;color:#d7e5ff} .li:before{content:"✓";color:var(--brand)}
+    .imgFrame{aspect-ratio:16/10;background:#0a1329;border:1px dashed #1a2f63;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#6e86c1}
+    .priceTag{display:flex;align-items:baseline;gap:10px} .priceMain{font-size:40px;font-weight:800;color:#ecfeff} .priceSub{color:#a8f3d9} .strike{opacity:.55;text-decoration:line-through}
+    .muted{color:#a7b0c3} .foot{margin-top:56px;padding:24px 0;border-top:1px solid #1a274d;color:#93a6d9;font-size:13px}
+    .note{font-size:12px;color:#9fb1e1} @media (max-width:980px){.hero{grid-template-columns:1fr} .grid-3,.grid-2{grid-template-columns:1fr} .h1{font-size:34px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span class="pill">RACAITECH</span>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span class="badge">Instant Access</span>
+        <span class="badge">ClickBank Checkout</span>
+        <span class="badge">Beginner‑Friendly</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap hero">
+    <div>
+      <div class="badge">Launch Offer — Intro Pricing</div>
+      <h1 class="h1">AI-Powered Web Scraping & Data Tools — Basic Kit</h1>
+      <p class="sub">Scrape products, jobs, and news into a clean dashboard. Python API + PHP UI. Export CSV/Excel/JSON. Ready in minutes.</p>
+      <div style="display:flex;gap:12px;margin-top:16px">
+        <a href="YOUR_CLICKBANK_ORDER_LINK" class="cta">Get Instant Access — <span class="strike">$79</span> $29</a>
+        <a href="#tour" class="btnGhost">See What’s Inside</a>
+      </div>
+      <p class="note" style="margin-top:8px">Secure ClickBank checkout • Instant download on the Thank‑You page</p>
+    </div>
+    <div class="card">
+      <div class="imgFrame">Place your screenshot here</div>
+      <div style="margin-top:12px">
+        <div class="li">5 sources: Hacker News, Wikipedia, Python Jobs, Books demo, Weather</div>
+        <div class="li">AI sentiment scoring included</div>
+        <div class="li">CSV / Excel / JSON exports</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap sec" id="tour">
+    <h2 style="margin:0 0 10px">What’s included</h2>
+    <div class="grid-2" style="margin-top:10px">
+      <div class="card">
+        <h3>Python (Flask) API</h3>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li class="li">Endpoints: /scrape/news|wiki|jobs|shop|weather, /export/&lt;dataset&gt;</li>
+          <li class="li">UTF‑8 safe exports (Excel‑friendly)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>PHP Dashboard (Bootstrap)</h3>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li class="li">Tabs, search, filters, export buttons</li>
+          <li class="li">Simple install on XAMPP or shared hosting</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Docs & Support</h3>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li class="li">Step-by-step setup guide</li>
+          <li class="li">Clean, commented codebase</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Use Cases</h3>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li class="li">Price tracking & product research</li>
+          <li class="li">Job lead generation</li>
+          <li class="li">News tracking & sentiment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap sec">
+    <div class="card" style="display:grid;grid-template-columns:1.5fr 1fr;gap:18px;align-items:center">
+      <div>
+        <h2 style="margin:0 0 6px">Grab the Basic Kit</h2>
+        <p class="muted">Lifetime license • Free updates for 6 months • Single user</p>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li class="li">5 ready-made scrapers</li>
+          <li class="li">AI sentiment included</li>
+          <li class="li">CSV/Excel/JSON exports</li>
+          <li class="li">Setup guide + email support</li>
+        </ul>
+      </div>
+      <div class="card" style="text-align:center;background:rgba(255,255,255,.02)">
+        <div class="priceTag"><span class="priceMain"><span class="strike">$79</span> $29</span><span class="priceSub">launch price</span></div>
+        <a href="YOUR_CLICKBANK_ORDER_LINK" class="cta" style="margin-top:10px;justify-content:center">Checkout Securely</a>
+        <p class="note" style="margin-top:8px">Processed by ClickBank. Instant download after purchase.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap foot">
+    <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center">
+      <div>© 2025 RACAITECH. All rights reserved.</div>
+      <div>
+        <a href="mailto:YOUR_SUPPORT_EMAIL" style="color:#cfe6ff;text-decoration:none;margin-right:12px">Support</a>
+        <a href="YOUR_PRIVACY_URL" style="color:#cfe6ff;text-decoration:none;margin-right:12px">Privacy</a>
+        <a href="YOUR_TERMS_URL" style="color:#cfe6ff;text-decoration:none">Terms</a>
+      </div>
+    </div>
+    <p class="note" style="margin-top:8px">
+      CLICKBANK® is the retailer of this product. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave, Suite 410, Boise, ID 83709, USA and used by permission. ClickBank’s role as retailer does not constitute an endorsement, approval or review of this product or any claim, statement or opinion used in promotion of this product.
+    </p>
+  </div>
+</body>
+</html>
