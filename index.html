@@ -5,6 +5,97 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Inside Your Funnel Builder Kit</title>
   <link rel="stylesheet" href="assets/style.css"/>
+  <style>
+/* Pricing Grid Layout */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Card Base */
+.pricing-grid .card {
+  background: #111827; /* dark background */
+  border-radius: 12px;
+  padding: 2rem;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-grid .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Basic Card */
+.pricing-grid .basic {
+  border: 2px solid #3b82f6; /* blue border */
+}
+
+.pricing-grid .basic h3 {
+  color: #3b82f6;
+}
+
+/* Pro Card */
+.pricing-grid .pro {
+  border: 2px solid #facc15; /* gold/yellow border */
+  background: linear-gradient(145deg, #1e293b, #111827);
+}
+
+.pricing-grid .pro h3 {
+  color: #facc15;
+}
+
+.pricing-grid .pro .price {
+  font-weight: bold;
+  color: #fde047; /* bright gold */
+}
+
+/* Features List */
+.pricing-grid ul.features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.pricing-grid ul.features li {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+/* Buttons */
+.pricing-grid .btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.pricing-grid .btn-primary {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.pricing-grid .btn-primary:hover {
+  background: #2563eb;
+}
+
+.pricing-grid .btn-accent {
+  background: #facc15;
+  color: #111;
+}
+
+.pricing-grid .btn-accent:hover {
+  background: #eab308;
+}   
+  </style>
 </head>
 <body>
   <div class="container">
@@ -53,11 +144,43 @@
     </section>
 
     
-    <section class="section pricing">
-      <h2>Choose Your Kit</h2>
-      <div class="pricing-grid">
-        
-    </section>
+<section class="section pricing">
+  <h2>Choose Your Kit</h2>
+  <div class="pricing-grid">
+
+    <!-- Basic Package -->
+    <div class="card basic">
+      <h3>Basic</h3>
+      <p class="price">$27 – $47 <span>(one-time)</span></p>
+      <ul class="features">
+        <li>✔ Mini Funnel Builder</li>
+        <li>✔ 50 Funnel Prompts</li>
+        <li>✔ 5-Email Sequence</li>
+        <li>✔ Canva Templates</li>
+        <li>✔ Free Updates & Support – 3 Months</li>
+      </ul>
+      <a href="basic.html" class="btn btn-primary">Get Basic – Instant Access</a>
+    </div>
+
+    <!-- Pro Package -->
+    <div class="card pro">
+      <h3>Pro</h3>
+      <p class="price">$97 – $197 <span>(one-time)</span></p>
+      <ul class="features">
+        <li>✔ Everything in Basic</li>
+        <li>✔ 200+ Funnel Prompts</li>
+        <li>✔ Advanced Funnel Scripts</li>
+        <li>✔ Chatbot Templates</li>
+        <li>✔ Automation Workflows</li>
+        <li>✔ AI Analytics Dashboard</li>
+        <li>✔ Resell Rights</li>
+        <li>✔ Free Updates & Support – 6 Months</li>
+      </ul>
+      <a href="pro.html" class="btn btn-accent">Upgrade to Pro</a>
+    </div>
+
+  </div>
+</section>
 
     <section class="section">
       <h2>FAQ</h2>
