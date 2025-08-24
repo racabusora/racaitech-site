@@ -95,6 +95,28 @@
 .pricing-grid .btn-accent:hover {
   background: #eab308;
 }   
+/* Cards used in kitlist / pricing */
+.section .card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* The list grows; button sits below it */
+.section .card .list,
+.section .card ul {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  list-style: none;
+  flex: 1 1 auto;
+}
+
+/* Buttons inside cards */
+.section .card .btn {
+  display: inline-block;
+  width: max-content;     /* or 100% if you want full width */
+  margin-top: 0.75rem;
+  position: static;       /* critical: disable absolute positioning */
+}
   </style>
 </head>
 <body>
